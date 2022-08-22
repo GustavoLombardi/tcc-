@@ -37,11 +37,11 @@ ThemeData androidTheme() {
       ),
     ),
     buttonTheme: const ButtonThemeData(
-      buttonColor: Color.fromRGBO(19, 124, 65, 1),
+      buttonColor: Color.fromARGB(255, 0, 100, 249),
       textTheme: ButtonTextTheme.primary,
     ),
     popupMenuTheme: PopupMenuThemeData(
-      color: const Color.fromRGBO(19, 124, 65, 1),
+      color: const Color.fromARGB(255, 0, 100, 249),
       textStyle: GoogleFonts.quicksand(
         fontSize: 20,
         fontWeight: FontWeight.w600,

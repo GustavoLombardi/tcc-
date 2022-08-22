@@ -37,12 +37,16 @@ dependencies:
   animated_text_kit: ^4.2.1
   shimmer: ^2.0.0
   mask_text_input_formatter: ^2.0.0
+  fluttertoast: ^8.0.8
+  freezed: ^2.0.2
+  freezed_annotation: ^2.0.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
   flutter_lints: ^1.0.0
+  build_runner: ^2.1.10
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

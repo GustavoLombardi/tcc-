@@ -1,16 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:tcc/screens/themes/constant.dart';
+import 'package:get/get.dart';
 import 'package:tcc/screens/home/components/category_card.dart';
 import 'package:tcc/screens/home/components/doctor_card.dart';
+import 'package:tcc/screens/home/drawer.dart';
+import 'package:tcc/screens/login/controller/auth_controller.dart';
+import 'package:tcc/themes/constant.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  final _scaffoldKey = GlobalKey<ScaffoldState>();
+  final authController = Get.find<AuthController>();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      key: _scaffoldKey,
       backgroundColor: kBackgroundColor,
+      drawer: DrawerHome(),
       body: SafeArea(
         bottom: false,
         child: SingleChildScrollView(
@@ -22,13 +35,11 @@ class HomeScreen extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
-                    SvgPicture.asset('assets/icons/menu.svg'),
                     GestureDetector(
-                      onTap: () {},
-                      child: Hero(
-                          tag: 1,
-                          child: SvgPicture.asset('assets/icons/profile.svg')),
-                    ),
+                        onTap: () {
+                          _scaffoldKey.currentState!.openDrawer();
+                        },
+                        child: SvgPicture.asset('assets/icons/menu.svg')),
                   ],
                 ),
               ),

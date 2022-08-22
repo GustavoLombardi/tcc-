@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
-import 'package:tcc/screens/themes/custom_colors.dart';
+import 'package:tcc/themes/custom_colors.dart';
 
 import '../common_widgets/custom_text_field.dart';
 

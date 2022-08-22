@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:tcc/screens/details/components/schedule_card.dart';
-import 'package:tcc/screens/themes/constant.dart';
-import 'package:tcc/screens/themes/styles.dart';
+
+
 import 'package:url_launcher/url_launcher.dart';
+
+import '../../themes/constant.dart';
+import '../../themes/styles.dart';
 
 // ignore: must_be_immutable
 class DetailScreen extends StatelessWidget {

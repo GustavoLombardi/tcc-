@@ -1,7 +1,8 @@
 // ignore_for_file: prefer_typing_uninitialized_variables
 
 import 'package:flutter/material.dart';
-import 'package:tcc/screens/themes/constant.dart';
+
+import '../../../themes/constant.dart';
 
 class ScheduleCard extends StatelessWidget {
   final _title;

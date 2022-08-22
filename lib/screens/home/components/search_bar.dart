@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:tcc/screens/themes/constant.dart';
+
+import '../../../themes/constant.dart';
 
 class SearchBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var kSearchBackgroundColor;
     return Stack(
       children: <Widget>[
         Container(

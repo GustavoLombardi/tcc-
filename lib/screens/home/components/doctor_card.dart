@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:tcc/screens/themes/constant.dart';
 import 'package:tcc/screens/details/detail_screen.dart';
+
+import '../../../themes/constant.dart';
 
 class DoctorCard extends StatelessWidget {
   var _name;
